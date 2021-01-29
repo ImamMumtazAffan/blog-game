@@ -1,0 +1,44 @@
+html {
+	scroll-behavior: smooth;
+	}
+
+.navbar {
+  background-color: white!important;
+ }
+
+.carousel {
+	margin-top: 70px;
+	}
+
+.carousel img {
+	height: 500px;
+	}
+
+ul li a:hover {
+	color: #19BFFF!important;
+	}
+	
+
+	
+@media (max-width: 768px) {
+	ul li:hover {
+		background-color: #19BFFF;
+		color: #FFFFFF!important;
+		}
+		
+	ul li a:hover {
+		color: #FFFFFF!important;
+		}
+		
+	ul li a {
+		margin-left: 15px;
+		}
+		
+ 	.carousel img {
+		height: 50%;
+		}
+		
+	form {
+		padding-left: 15px;
+		}
+}
