@@ -6,13 +6,16 @@ html {
   background-color: white!important;
         }
 
-.carousel-slide {
+.carousel {
 	margin-top: 70px;
 	}
 
-.carousel-slide img {
+.carousel-inneder{
+	margin: 0;
+        }
+.carousel-item img{
 	height: 520px;
-	}
+        }
 
 .image-skin {
 	width: 50%;
