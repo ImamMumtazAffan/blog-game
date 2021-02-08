@@ -4,15 +4,20 @@ html {
 
 .navbar {
   background-color: white!important;
- }
+        }
 
 .carousel {
 	margin-top: 70px;
 	}
 
-.carousel img {
-	height: 500px;
+.carousel-slide img {
+	height: 520px;
 	}
+
+.image-skin {
+	width: 50%;
+	height: 50%;
+        }
 
 ul li a:hover {
 	color: #19BFFF!important;
@@ -34,7 +39,7 @@ ul li a:hover {
 		margin-left: 15px;
 		}
 		
- 	.carousel img {
+ 	.carousel-slide img {
 		height: 50%;
 		}
 		
