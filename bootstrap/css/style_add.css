@@ -1,0 +1,13 @@
+body {
+  background-repeat: no-repeat;
+  background-image: url('../../img/bg_pc.jpg');
+  background-size: cover;
+}
+
+@media (max-width: 767.98px) {
+  body {
+  background-repeat: no-repeat;
+  background-image: url('../../img/bg_and.jpg');
+  background-size: cover;
+  }
+}
