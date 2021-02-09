@@ -24,13 +24,7 @@ CREATE TABLE `all_role` (
 
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `all_role` (`id`, `nama_hero`, `first_skill`, `second_skill`, `ultimate_skill`, `head_icon`) VALUES
-
-('1', 'Yu Zhong', 'Dragon Tail', 'Soul Grip', 'Furious Dive', 'IMG_20210204_231225.JPG'),
-
-('2', 'Saber', 'Orbiting Swords', 'Charge', 'Triple Sweep', 'IMG_20210204_234727.JPG'),
-
-('0', 'Khufra', 'Tyrants Revenge', 'Bouncing Ball', 'Spell curse', 'image_398cd0a73db63a4b098ab28de5953a0d.png');
+-- [Tabel `all_role` kosong]
 
 CREATE TABLE `assasin` (
 
@@ -50,9 +44,7 @@ CREATE TABLE `assasin` (
 
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=2;
 
-INSERT INTO `assasin` (`id`, `nama_hero`, `first_skill`, `second_skill`, `ultimate_skill`, `head_icon`) VALUES
-
-('1', 'Saber', 'Orbiting Swords', 'Charge', 'Triple Sweep', 'IMG_20210204_234727.JPG');
+-- [Tabel `assasin` kosong]
 
 CREATE TABLE `fighter` (
 
@@ -72,9 +64,7 @@ CREATE TABLE `fighter` (
 
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=2;
 
-INSERT INTO `fighter` (`id`, `nama_hero`, `first_skill`, `second_skill`, `ultimate_skill`, `head_icon`) VALUES
-
-('1', 'Yu Zhong', 'Dragon Tail', 'Soul Grip', 'Furious Dive', 'IMG_20210204_231225.JPG');
+-- [Tabel `fighter` kosong]
 
 CREATE TABLE `mage` (
 
@@ -154,6 +144,4 @@ CREATE TABLE `tank` (
 
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=2;
 
-INSERT INTO `tank` (`id`, `nama_hero`, `first_skill`, `second_skill`, `ultimate_skill`, `head_icon`) VALUES
-
-('1', 'Khufra', 'Tyrants Revenge', 'Bouncing Ball', 'Spell curse', 'image_398cd0a73db63a4b098ab28de5953a0d.png');
+-- [Tabel `tank` kosong]
