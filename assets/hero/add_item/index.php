@@ -6,18 +6,18 @@ if (isset($_POST["tambah"])){
 	
 	if ( all_role($_POST) > 0) {
 		echo "
-				<script>
-					alert('Berhasil Menambahkan Data !');
-					document.location.href = 'add.php';
-				</script>
+			<script>
+				alert('Berhasil Menambahkan Data !');
+					document.location.href = 'index.php';
+			</script>
 		";
 		}
-		else {
-			echo "
-				<script>
-					alert('Gagal Menambahkan Data !');
-					document.location.href = 'add.php';
-				</script>
+	else {
+		echo "
+			<script>
+				alert('Gagal Menambahkan Data !');
+					document.location.href = 'index.php';
+			</script>
 		";
 		}
 			
@@ -26,7 +26,7 @@ if ($_POST["choose"]=="1"){
 		echo "
 				<script>
 					alert('Berhasil Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
@@ -34,18 +34,18 @@ if ($_POST["choose"]=="1"){
 			echo "
 				<script>
 					alert('Gagal Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
 			}
 			
-if ($_POST["choose"]=="2"){
+else if ($_POST["choose"]=="2"){
 	if ( fighter($_POST) > 0) {
 		echo "
 				<script>
 					alert('Berhasil Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
@@ -53,18 +53,18 @@ if ($_POST["choose"]=="2"){
 			echo "
 				<script>
 					alert('Gagal Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
 			}
 			
-if ($_POST["choose"]=="3"){
+else if ($_POST["choose"]=="3"){
 	if ( assasin($_POST) > 0) {
 		echo "
 				<script>
 					alert('Berhasil Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
@@ -72,18 +72,18 @@ if ($_POST["choose"]=="3"){
 			echo "
 				<script>
 					alert('Gagal Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
 			}
 			
-if ($_POST["choose"]=="4"){
+else if ($_POST["choose"]=="4"){
 	if ( mage($_POST) > 0) {
 		echo "
 				<script>
 					alert('Berhasil Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
@@ -91,18 +91,18 @@ if ($_POST["choose"]=="4"){
 			echo "
 				<script>
 					alert('Gagal Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
 			}
 			
-if ($_POST["choose"]=="5"){
+else if ($_POST["choose"]=="5"){
 	if ( marksman($_POST) > 0) {
 		echo "
 				<script>
 					alert('Berhasil Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
@@ -110,18 +110,18 @@ if ($_POST["choose"]=="5"){
 			echo "
 				<script>
 					alert('Gagal Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
 			}
 			
-if ($_POST["choose"]=="6"){
+else if ($_POST["choose"]=="6"){
 	if ( support($_POST) > 0) {
 		echo "
 				<script>
 					alert('Berhasil Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
@@ -129,7 +129,7 @@ if ($_POST["choose"]=="6"){
 			echo "
 				<script>
 					alert('Gagal Menambahkan Data !');
-					document.location.href = 'add.php';
+					document.location.href = 'index.php';
 				</script>
 		";
 		}
