@@ -157,7 +157,7 @@ else if ($_POST["choose"]=="6"){
 
 <!-- FORM -->
 <container-fluid>
-<form action="" method="POST">
+<form action="" method="POST" enctype="multipart/form-data">
 	<div class="daftar justify-content-center offset-2 col-8 mt-5">
 		<div class="shadow p-3 mb-5 bg-white rounded">
 	<h1 class="text-center mb-5">Add New Hero</h1>
