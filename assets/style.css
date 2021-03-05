@@ -1,0 +1,106 @@
+body {
+	background-color: #15273B ;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  padding-top: 100px;
+	margin-bottom: 10px;
+  grid-area: header;
+  background-color: #15273B   ;
+  text-align: center;
+  font-size: 35px;
+  display: inline;
+   border-style: 20px solid black;
+}
+p {
+	text-align: center;
+}
+
+h2 {
+	font-family: fantasy;
+}
+/* The grid container */
+.container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  margin-right: 10px;
+  height: 1000px;
+  border-radius: 10px;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  color: red;
+  font-family: monospace;
+  overflow: auto;
+    padding: 50px;
+  border-radius: 10px;
+  border-image: 2px;
+
+}
+
+/* Style the right column */
+
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  color: lightgrey;
+  background-color: #111;
+  padding: 10px;
+  text-align: center;
+
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+
+
+
+  
+}
+ p {
+	border:2px;
+}
+
+.text{
+  border:1px;
+  text-align: center;
+  border:1px;
+}
