@@ -6,25 +6,6 @@
 
 --
 
-CREATE TABLE `all_role` (
-
-   `id` int(225) not null,
-
-   `nama_hero` varchar(100) not null,
-
-   `first_skill` varchar(100),
-
-   `second_skill` varchar(100) not null,
-
-   `ultimate_skill` varchar(100) not null,
-
-   `head_icon` varchar(100),
-
-   PRIMARY KEY (`id`)
-
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
-
--- [Tabel `all_role` kosong]
 
 CREATE TABLE `assasin` (
 
