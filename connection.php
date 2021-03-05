@@ -16,24 +16,54 @@ function query($query){
 	return $rows;
 }
 
-function all_role($upload){
-	global $koneksi;
-	
-	$nama_hero = htmlspecialchars($upload["nama_hero"]);
-	$first_skill = htmlspecialchars($upload["first_skill"]);
-	$second_skill = htmlspecialchars($upload["second_skill"]);
-	$ultimate_skill = htmlspecialchars($upload["ultimate_skill"]);
-	$head_icon = htmlspecialchars($upload["head_icon"]);
-	
-	$query = "INSERT INTO all_role
-						VALUES
-					('', '$nama_hero', '$first_skill', '$second_skill', '$ultimate_skill', '$head_icon')";
-					
-	mysqli_query($koneksi, $query);
-	
-	return mysqli_affected_rows($koneksi);
+function upload(){
+	$namefile = $_FILES['head_icon']['name'];
+	$sizefile = $_FILES['head_icon']['size'];
+	$error = $_FILES['head_icon']['error'];
+	$tmpname = $_FILES['head_icon']['tmp_name'];
+
+
+	if( $error === 4 ) {
+		echo "<script>
+				alert('Pilih gambar yang ingin anda input !');
+			</script>";
+		return false;
 	}
-	
+
+	$ekstensivalid = ['jpg', 'jpeg', 'png'];
+	$ekstensigambar = explode('.', $namefile);
+	$ekstensigambar = strtolower(end($ekstensigambar));
+
+	if( !in_array($ekstensigambar, $ekstensivalid)) {
+		echo "<script>
+				alert('Pilih file gambar !');
+			</script>";
+		return false;
+	}
+
+	if ( !in_array($ekstensigambar, $ekstensivalid)) {
+		echo "<script>
+				alert('Hanya boleh upload file gambar !');
+			</script>";
+		return false;
+	}
+
+	if ( $sizefile > 10000000 ) {
+		echo "<script>
+				alert('Size gambar terlalu besar !');
+			</script>";
+		return false;
+	}
+
+	$newfilename = uniqid();
+	$newfilename = '.';
+	$newfilename = $ekstensigambar;
+
+	move_uploaded_file($tmpname, 'img/' . $namefilename);
+	return $namefilename;
+
+}
+
 	
 function fighter($upload){
 	global $koneksi;
